@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "966356943467",
+    "firebase_url": "https://gvjc-oles.firebaseio.com",
+    "project_id": "gvjc-oles",
+    "storage_bucket": "gvjc-oles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966356943467:android:34760484bb4066a6b3a72e",
+        "android_client_info": {
+          "package_name": "com.gvjc.gvjcoles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966356943467-hj0a5nd6k2o2b8m75h07lbmdttbrkha5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gvjc.gvjcoles",
+            "certificate_hash": "d1767d7725a95c1420ebb260424832a5c84a183e"
+          }
+        },
+        {
+          "client_id": "966356943467-48vt7or0fj27cqs57p4gredo6gea90k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjywmS0PEbAO7T5YbV5XVg8gwE-bSzKb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966356943467-48vt7or0fj27cqs57p4gredo6gea90k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gvjc.gvjcoles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/gvjc_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/gvjc_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".webview.PlayerActivity"></activity>
+        <activity
+            android:name=".webview.DoubtActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity
+            android:name=".webview.StudyMaterialActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".webview.HtmlActivity" />
+        <activity
+            android:name=".webview.DownloadActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.YoutubePlayerActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_9g1BC6Ubpj3YYB" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".notifications.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.PrivacyPolicyActivity" />
+        <activity android:name=".activities.TermsConditionsActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.BookmarksActivity" />
+        <activity android:name=".activities.SubscriptionActivity" />
+        <activity android:name=".activities.ExamsActivity" />
+        <activity android:name=".activities.LMSActivity" />
+        <activity android:name=".activities.ExamsSeriesActivity" />
+        <activity android:name=".activities.LMSSeriesActivity" />
+        <activity android:name=".activities.AnalysisActivity" />
+        <activity android:name=".activities.NotificationsActivity" />
+        <activity android:name=".activities.CategoryExamsListActivity" />
+        <activity android:name=".activities.MyProfileActivity" />
+        <activity android:name=".activities.LMSCategoryList" />
+        <activity android:name=".activities.ExamInstructionsActivity" />
+        <activity
+            android:name=".activities.TakeExamActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.AddFeedBackActivity" />
+        <activity android:name=".activities.ResultActivity" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.CheckOutActivity" />
+        <activity
+            android:name=".activities.TakeExamSectionWiseActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.ExamsSeriesList" />
+        <activity android:name=".activities.PayUPaymentGatway" />
+        <activity
+            android:name=".activities.TakeExamSectionWiseTimeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.ExamsHistoryActivity" />
+        <activity android:name=".getkey.KeyTakeExamSectionWiseTimeActivity" />
+        <activity android:name=".getkey.KeyTakeExamSectionWiseActivity" />
+        <activity android:name=".getkey.KeyTakeExamActivity" />
+        <activity android:name=".activities.OfflinePaymentActivity" />
+        <activity
+            android:name=".activities.LMSSeriesCategoryListActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>
